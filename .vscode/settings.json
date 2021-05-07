@@ -1,0 +1,12 @@
+{
+    "C_Cpp.dimInactiveRegions": false,
+    "files.encoding": "gb2312",
+    "files.autoGuessEncoding": true,
+    "files.associations": {
+        "server.h": "c",
+        "debugging.h": "c",
+        "core_delay.h": "c",
+        "bsp_exti.h": "c",
+        "bsp_tim6.h": "c"
+    }
+}

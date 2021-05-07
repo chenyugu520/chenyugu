@@ -1,0 +1,7 @@
+现象：warning: LF will be replaced by CRLF in keilkill.bat.
+          The file will have its original line endings in your working directory
+原因：LF和CRLF其实都是换行符，但是不同的是，LF是linux和Unix系统的换行符，CRLF是window 系统的换行符。这就给跨平台的协作的项目带              来了问题，保存文件到底是使用哪个标准呢？ git为了解决这个问题，提供了一个”换行符自动转换“的功能，并且这个功能是默认处于”自          动模式“即开启状态的。
+解决：最简单的一种办法就是把自动转换功能关掉即可。
+          输入命令 ：git config core.autocrlf false (仅对当前git仓库有效）
+          git config --global core.autocrlf false (全局有效，不设置推荐全局）
+注意：自动转换功能关掉时在跨平台开发时会导致代码出现乱码；推荐忽略此警告。
